@@ -17,6 +17,8 @@ Fast, less Ram and network
 Privacy 
 - No tracking you 
 
+Easy switch between GramTube and Youtube , just change host name and keep path
+
 ## Usage
 Go to [tube.wingram.org](https://tube.wingram.org)
 
