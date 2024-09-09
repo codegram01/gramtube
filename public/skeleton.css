@@ -1,0 +1,41 @@
+.skeleton-ctn {
+  width: 100%;
+  padding: 10px;
+  background: #434343;
+  margin: auto;
+}
+
+.skeleton-placeholder {
+  position: relative;
+  background: #626261;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skeleton-placeholder:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  left: -100px;
+  top: 0;
+  background: linear-gradient(to right, transparent, #ffffff70, transparent);
+  animation: skeleton-reflect 800ms ease-out infinite;
+}
+
+.skeleton-title {
+  width: 80%;
+  min-height: 20px;
+  margin-bottom: 10px;
+}
+
+.skeleton-content {
+  width: 100%;
+  min-height: 60px;
+}
+
+@keyframes skeleton-reflect {
+  to {
+    left: calc(100% + 100px);
+  }
+}

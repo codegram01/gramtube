@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GramTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/skeleton.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="navbar">
+            <a href="/" class="home-link">
+                <img src="public/icons/logo.jpg" class="logo-img-nav">
+                <div class="logo logo-nav">GramTube</div>
+            </a>
+            <form action="/results.html" class="search search-nav">
+                <input id="search-query" class="search-inp search-inp-nav" type="search" name="search_query" placeholder="Search">
+                <button class="search-icn">
+                    <img src="/public/icons/search.svg">
+                </button>
+            </form>
+        </div>
+        <div id="results">
+            <div class="result">
+                <div class="skeleton-ctn">
+                    <div class="skeleton-placeholder skeleton-title"></div>
+                    <div class="skeleton-placeholder skeleton-content"></div>
+                </div>
+            </div>
+            <div class="result">
+                <div class="skeleton-ctn">
+                    <div class="skeleton-placeholder skeleton-title"></div>
+                    <div class="skeleton-placeholder skeleton-content"></div>
+                </div>
+            </div>
+            <div class="result">
+                <div class="skeleton-ctn">
+                    <div class="skeleton-placeholder skeleton-title"></div>
+                    <div class="skeleton-placeholder skeleton-content"></div>
+                </div>
+            </div>
+        </div>
+        <div id="next-ctn"></div>
+
+        <script type="module" src="results.js"></script>
+    </div>
+</body>
+</html>
