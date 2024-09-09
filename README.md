@@ -2,7 +2,7 @@
 
 Youtube without Trash. Alternative youtube Client 
 
-[Video when i create]()
+[Video when i create](https://youtu.be/NWUy_Zwsv0Y?si=EUB_bumKdlKkbAIL)
 
 ## Feature
 No Ads
