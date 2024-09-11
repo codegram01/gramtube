@@ -1,30 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>GramTube</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/style.css">
-    <link rel="stylesheet" href="public/skeleton.css">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-    <div class="app">
-        <div class="navbar">
-            <a href="/" class="home-link">
-                <img src="public/icons/logo.jpg" class="logo-img-nav">
-                <div class="logo logo-nav">GramTube</div>
-            </a>
-            <form action="/results.html" class="search search-nav">
-                <input id="search-query" class="search-inp search-inp-nav" type="search" name="search_query" placeholder="Search">
-                <button class="search-icn">
-                    <img src="/public/icons/search.svg">
-                </button>
-            </form>
-        </div>
-        <div id="watch-ctn"></div>
-        
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <script type="module" src="watch.js"></script>
+    <title>GramTube</title>
+    <meta name="og:title" content="GramTube" />
+    <meta name="og:url" content="https://tube.wingram.org/" />
+
+    <meta name="description" content="Youtube without trash" />
+    <meta name="og:description" content="Youtube without trash" />
+
+    <meta name="og:image" content="https://base.wingram.org/images/logo.png" />
+    <link
+      rel="icon"
+      href="https://base.wingram.org/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://base.wingram.org/images/logo.png"
+    />
+    <link
+      rel="icon"
+      href="https://base.wingram.org/images/logo.png"
+      type="image/png"
+    />
+    <link rel="shortcut" href="https://base.wingram.org/images/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      href="https://base.wingram.org/images/logo.png"
+    />
+
+    <link rel="stylesheet" href="https://base.wingram.org/css/base.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="public/skeleton.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <header id="header">
+        <a href="https://wingram.org">Wingram</a> -
+        <a href="https://wingram.org/#software">Software</a> -
+        <a href="https://www.youtube.com/@WingramOrg">Channel</a> -
+        <a href="https://youtu.be/NWUy_Zwsv0Y?si=EUB_bumKdlKkbAIL">Created</a>
+      </header>
+      <nav>
+        <a href="/" class="logo">
+          <img src="https://base.wingram.org/images/logo.png" alt="Logo" />
+          <span>GramTube</span>
+        </a>
+        <div class="action">
+          <form action="/results" class="search search-nav">
+            <input
+              id="search-query"
+              type="search"
+              name="search_query"
+              placeholder="Enter something"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <main>
+        <div id="watch-ctn"></div>
+      </main>
+
+      <script type="module" src="watch.js"></script>
     </div>
-</body>
+  </body>
 </html>

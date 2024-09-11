@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>GramTube</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/style.css">
+    <meta name="og:title" content="GramTube" />
+    <meta name="og:url" content="https://tube.wingram.org/" />
+
+    <meta name="description" content="Youtube without trash" />
+    <meta name="og:description" content="Youtube without trash" />
+
+    <meta name="og:image" content="https://base.wingram.org/images/logo.png" />
+    <link
+      rel="icon"
+      href="https://base.wingram.org/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://base.wingram.org/images/logo.png"
+    />
+    <link
+      rel="icon"
+      href="https://base.wingram.org/images/logo.png"
+      type="image/png"
+    />
+    <link rel="shortcut" href="https://base.wingram.org/images/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      href="https://base.wingram.org/images/logo.png"
+    />
+
+    <link rel="stylesheet" href="https://base.wingram.org/css/base.css" />
+    <link rel="stylesheet" href="public/style.css" />
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</head>
-<body>
-    <div class="app">
-        <img src="public/icons/logo.jpg" class="logo-img">
-        <h1 class="logo">GramTube</h1>
-        <h2 class="logo-desc">Youtube without trash</h2>
+  </head>
+  <body>
+    <div id="root">
+      <header id="header">
+        <a href="https://wingram.org">Wingram</a> -
+        <a href="https://wingram.org/#software">Software</a> -
+        <a href="https://www.youtube.com/@WingramOrg">Channel</a> -
+        <a href="https://youtu.be/NWUy_Zwsv0Y?si=EUB_bumKdlKkbAIL">Created</a>
+      </header>
+      <nav>
+        <a href="/" class="logo">
+          <img src="https://base.wingram.org/images/logo.png" alt="Logo" />
+          <span>GramTube</span>
+        </a>
+      </nav>
+
+      <main>
+        <section class="branch">
+          <img
+            src="https://base.wingram.org/images/logo.png"
+            alt="Logo Wingram"
+          />
+          <h1>GramTube</h1>
+          <h2>Youtube without trash</h2>
+        </section>
         <form action="/results" class="search">
-            <input class="search-inp" type="search" name="search_query" placeholder="Search">
-            <button class="search-icn">
-                <img src="/public/icons/search.svg">
-            </button>
+          <input
+            type="search"
+            name="search_query"
+            placeholder="Enter Something"
+            autocomplete="on"
+          />
+          <button type="submit">Search</button>
         </form>
-        <div class="info-ctn">
-            <a href="https://youtu.be/NWUy_Zwsv0Y?si=EUB_bumKdlKkbAIL">Video i created GramTube</a>
-        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
